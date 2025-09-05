@@ -1883,7 +1883,7 @@ const CreateModal = (props) => {
                   placeholder={
                     localStorage.getItem("linkedinId") == null ||
                     localStorage.getItem("linkedinId") == ""
-                      ? "For eg: nachiket-trivedi"
+                      ? "For eg: hardi-trivedi"
                       : localStorage.getItem("linkedinId")
                   }
                   onChange={(e) => {
@@ -1900,7 +1900,7 @@ const CreateModal = (props) => {
                   placeholder={
                     localStorage.getItem("githubId") == null ||
                     localStorage.getItem("githubId") == ""
-                      ? "For eg: nachiket-trivedi"
+                      ? "For eg: hardi-trivedi"
                       : localStorage.getItem("githubId")
                   }
                   onChange={(e) => {

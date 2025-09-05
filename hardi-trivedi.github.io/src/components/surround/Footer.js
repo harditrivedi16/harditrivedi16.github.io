@@ -9,10 +9,10 @@ const Footer = () => {
       <a
         className="badge badge-dark"
         rel="noopener"
-        href="https://github.com/nachiket-trivedi"
+        href="https://github.com/hardi-trivedi"
         aria-label="My GitHub"
       >
-        Nachiket Trivedi
+        Hardi Trivedi
       </a>
     </footer>
   );

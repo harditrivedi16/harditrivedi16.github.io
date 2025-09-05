@@ -1,14 +1,14 @@
 let userData = {
-  firstName: "Nachiket",
+  firstName: "Hardi",
   lastName: "Trivedi",
   headline:
-    "Software Engineer Intern at Evolko | Graduate Student at San Jose State University",
+    "Software Engineer at Learn2AI | Graduate Student at San Jose State University",
   icons: [
     {
       id: 0,
       image: "fa-github",
       url: "https://github.com/",
-      handle: "nachiket-trivedi",
+      handle: "hardi-trivedi",
       style: "socialicons",
     },
     {
@@ -29,7 +29,7 @@ let userData = {
       id: 3,
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/",
-      handle: "nachiket-trivedi",
+      handle: "hardi-trivedi",
       style: "socialicons",
     },
     {
@@ -67,14 +67,14 @@ let userData = {
      to me, I love chit-chatting on random topics :D`,
   ],
   gitHubLink: "https://api.github.com/users/",
-  githubId: "nachiket-trivedi",
+  githubId: "hardi-trivedi",
   gitHubQuerry: "/repos?sort=updated&direction=desc",
   repos: [
     "CartShare",
     "Umbrella-MTaaS",
     "Grubhub-Fall19-Project",
     "Twitter-Fall19-Project",
-    "nachiket-trivedi.github.io",
+    "hardi-trivedi.github.io",
     "MalDetec-Undergrad-Freelance-Project",
     "HackAGame-FB-2019-Hackathon-San-Francisco",
     "Pandemia-A-COVID-19-Predictor",
@@ -98,7 +98,7 @@ let userData = {
       "Developed a 3-tier scalable social networking web application using the MERN stack which simulates Twitter.",
       "Implemented messaging queues using Kafka, used AWS Auto Scaling and Load Balancer over multiple EC2 instances.",
     ],
-    "nachiket-trivedi.github.io": [
+    "hardi-trivedi.github.io": [
       "Developed an open source React based web application for software developers to create their own portfolio websites.",
       "The app fetches user details using 3rd party APIs (like GitHub) and generates a feature-rich and ready-to-host portfolio specific to the user.",
     ],
@@ -128,7 +128,7 @@ let userData = {
     "Umbrella-MTaaS": "Fall 2019 – Spring 2020",
     "Grubhub-Fall19-Project": "Fall 2019",
     "Twitter-Fall19-Project": "Fall 2019",
-    "nachiket-trivedi.github.io": "Summer 2020",
+    "hardi-trivedi.github.io": "Summer 2020",
     "MalDetec-Undergrad-Freelance-Project": "Summer 2017",
     "HackAGame-FB-2019-Hackathon-San-Francisco": "Winter 2019",
     "Pandemia-A-COVID-19-Predictor": "Spring 2020",

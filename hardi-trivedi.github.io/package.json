@@ -1,12 +1,12 @@
 {
-  "name": "nachiket-portfolio",
-  "description": "nachiket-portfolio.",
-  "homepage": "http://nachiket-trivedi.github.io",
+  "name": "hardi-portfolio",
+  "description": "hardi-portfolio.",
+  "homepage": "http://hardi-trivedi.github.io",
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "Nachiket Trivedi",
-    "email": "nachiket5197@gmail.com"
+    "name": "Hardi Trivedi",
+    "email": "harditrivedi16@gmail.com"
   },
   "dependencies": {
     "axios": "^0.19.2",
