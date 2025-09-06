@@ -8,3 +8,7 @@ pm-node-server/node_modules
 ai-backend/venv/
 harditrivedi16.github.io/node_modules/
 ai-backend/venv/
+__pycache__/
+*.pyc
+venv/
+*.pdf
