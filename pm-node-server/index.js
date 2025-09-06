@@ -16,7 +16,7 @@ app.use(
   })
 );
 app.use(
-  cors({ origin: "https://nachiket-trivedi.github.io", credentials: false })
+  cors({ origin: "https://harditrivedi16.github.io", credentials: false })
 );
 
 app.post("/handleUserData", (req, res) => {

@@ -1,3 +1,7 @@
-nachiket-trivedi.github.io/node_modules
-nachiket-trivedi.github.io/build
+#===========
+#A .gitignore file tells Git which files and folders it should not track or commit into your repository.
+#============
+harditrivedi16.github.io/node_modules
+harditrivedi16.github.io/build
 pm-node-server/node_modules
+

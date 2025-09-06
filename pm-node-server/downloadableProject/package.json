@@ -1,13 +1,14 @@
 {
   "name": "my-portfolio",
   "description": "my-portfolio.",
-  "homepage": "http://nachiket-trivedi.github.io",
+  "homepage": "https://harditrivedi16.github.io",
+
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "Nachiket Trivedi",
-    "email": "nachiket5197@gmail.com",
-    "url": "https://github.com/nachiket-trivedi"
+    "name": "Hardi Trivedi",
+    "email": "harditrivedi16@gmail.com",
+    "url": "https://github.com/harditrivedi16"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -31,9 +32,9 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts --openssl-legacy-provider test",
     "eject": "react-scripts eject",
     "custom-deploy": "node deploy.js"
   },
