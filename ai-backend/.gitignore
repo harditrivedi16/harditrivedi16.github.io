@@ -1,0 +1,81 @@
+# ------------------------
+# Python / FastAPI project
+# ------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+*.env
+
+# Logs
+*.log
+logs/
+*.out
+
+# Database / cache
+*.db
+*.sqlite3
+*.sqlite
+*.pkl
+*.p
+*.h5
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+MANIFEST
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Hugging Face cache
+huggingface/
+.cache/
+.hf_cache/
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.swp
+
+# MacOS / system junk
+.DS_Store
+*.DS_Store
+__MACOSX/
+
+# Node.js (if frontend sneaks in)
+node_modules/
+
+# PDFs / binaries
+*.pdf
+*.bin
+*.ckpt
+*.pth
+*.pt
+*.onnx
+
+# Qdrant / vector db dumps
+*.qdrant
+*.snapshot
+*.db
+
+# ------------------------
+# Hugging Face Spaces
+# ------------------------
+# Don’t push big model weights or temp dirs
+*.tar.gz
+*.tgz
+*.zip

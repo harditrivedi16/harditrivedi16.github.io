@@ -7,10 +7,14 @@ import { saveAs } from "file-saver";
 import axios from "axios";
 
 const CreateModal = (props) => {
+  const [showPDFModal, setShowPDFModal] = useState(false);
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
   const [show3, setShow3] = useState(false);
   const [show4, setShow4] = useState(false);
+  const [selectedPDF, setSelectedPDF] = useState(null);
+  const [isProcessingAI, setIsProcessingAI] = useState(false); 
+  const [pdfUploading, setPdfUploading] = useState(false);
   const [firstName, setFirstName] = useState(localStorage.getItem("firstName"));
   const [lastName, setLastName] = useState(localStorage.getItem("lastName"));
   const [headline, setHeadline] = useState(localStorage.getItem("headline"));
@@ -472,6 +476,10 @@ const CreateModal = (props) => {
   ]);
   const [projectsContentDisplay, setProjectsContentDisplay] = useState();
   const [projectsIndex, setProjectsIndex] = useState(0);
+
+  const handleCreateClick = () => {
+  setShowPDFModal(true); // Show PDF modal first
+  };
 
   const handleClose = () => {
     setShow1(false);
@@ -1793,11 +1801,64 @@ const CreateModal = (props) => {
     <>
       <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
         <li className="nav-item">
-          <a className="nav-link lead" onClick={handleShow1}>
+          <a className="nav-link lead" onClick={handleCreateClick}>
             <b>{"Create"}</b>
           </a>
         </li>
       </ul>
+      
+      
+      
+      <Modal
+        show={showPDFModal}
+        onHide={() => setShowPDFModal(false)}
+        centered
+        className={styles.createModal}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Upload Your Resume (PDF)</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group>
+              <Form.File
+                label="Choose PDF"
+                accept=".pdf"
+                onChange={(e) => setSelectedPDF(e.target.files[0])}
+              />
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowPDFModal(false)}>
+            Cancel
+          </Button>
+          <Button
+            variant="primary"
+            disabled={!selectedPDF || pdfUploading}
+            onClick={async () => {
+              setPdfUploading(true);
+
+              // Simulate delay for now
+              //await new Promise((res) => setTimeout(res, 2500));
+
+              setPdfUploading(false);
+              setShowPDFModal(false);
+              handleShow1(); // Proceed to form
+            }}
+          >
+            <img
+              src="/ai-sparkle-icon.svg" // update if your icon name is different
+              alt="AI"
+              style={{ width: "1.2rem", marginRight: "0.5rem", marginBottom: "3px" }}
+            />
+            Generate Portfolio
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      
+
       <Modal
         show={show1}
         onHide={handleClose}
@@ -2319,6 +2380,7 @@ const CreateModal = (props) => {
         </Modal.Footer>
       </Modal>
     </>
+    
   );
 };
 

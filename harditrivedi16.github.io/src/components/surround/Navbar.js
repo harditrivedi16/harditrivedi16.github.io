@@ -4,6 +4,7 @@ import userData from "../../config/userData";
 import styles from "../../styles/Styles.module.css";
 import CreateModal from "../creator/CreateModal";
 import DownloadModal from "../creator/DownloadModal";
+import GenerateModal from "../creator/GenerateModal";
 import axios from "axios";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
@@ -98,6 +99,12 @@ const Navbar = (props) => {
             </ul>
           </div>
           <div className={styles.rightHeader}>
+            
+            <GenerateModal
+              isChanged={props.isChanged}
+              setIsChanged={props.setIsChanged}
+            />
+
             <CreateModal
               isChanged={props.isChanged}
               setIsChanged={props.setIsChanged}

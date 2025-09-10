@@ -12,3 +12,7 @@ __pycache__/
 *.pyc
 venv/
 *.pdf
+Temp/.env
+Temp/Hardi_Resume
+.DS_Store
+

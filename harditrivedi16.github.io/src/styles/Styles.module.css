@@ -280,3 +280,82 @@
   justify-content: space-between;
   align-items: center;
 }
+.aiOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.7); /* Dim everything */
+  backdrop-filter: blur(4px); /* Optional: adds subtle blur to dialog too */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000; /* Higher than modal (Bootstrap modal = 1050) */
+}
+
+.aiLoader {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.aiRing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #ccc;
+  border-top: 5px solid #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.aiIcon {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2001;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.navButton {
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 20px;
+  position: relative; /* needed so Beta can position itself */
+}
+
+.generateWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.betaTag {
+  position: absolute;
+  top: 100%;      /* place below "Generate" */
+  left: 0;        /* align with start of "Generate" */
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: teal;
+  color: white;
+  font-size: 0.4rem;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.sparkle {
+  font-size: 1rem;
+  margin-left: 4px;
+  color: rgb(138, 38, 123);
+}
+
