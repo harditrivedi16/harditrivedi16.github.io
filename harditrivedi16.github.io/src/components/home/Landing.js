@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Typist from "react-typist";
+import { Typewriter} from "react-simple-typewriter";
 import userData from "../../config/userData";
 
 const Landing = (props) => {
@@ -89,10 +89,15 @@ const Landing = (props) => {
               " " +
               (lastName == undefined ? "" : lastName)}
           </h1>
-          <Typist className="lead" cursor={{ show: false }}>
-            {" "}
-            {headline}
-          </Typist>
+          <Typewriter
+            words={[headline]}
+            loop={false}
+            cursor
+            cursorStyle=""
+            typeSpeed={70}
+            deleteSpeed={0}
+            delaySpeed={1000}
+          />
           <div className="p-5">
             {icons.map((icon) =>
               icon["handle"] != null && icon["handle"] != "" ? (
@@ -114,14 +119,6 @@ const Landing = (props) => {
               ) : null
             )}
           </div>
-          {/* <a
-            className="btn btn-outline-light btn-lg"
-            href="#aboutme"
-            role="button"
-            aria-label="Learn more about me"
-          >
-            More about me
-          </a> */}
         </div>
       </div>
     </div>

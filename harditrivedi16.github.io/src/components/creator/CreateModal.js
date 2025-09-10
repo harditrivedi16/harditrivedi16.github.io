@@ -478,7 +478,7 @@ const CreateModal = (props) => {
   const [projectsIndex, setProjectsIndex] = useState(0);
 
   const handleCreateClick = () => {
-  setShowPDFModal(true); // Show PDF modal first
+  handleShow1()
   };
 
   const handleClose = () => {
@@ -1808,54 +1808,7 @@ const CreateModal = (props) => {
       </ul>
       
       
-      
-      <Modal
-        show={showPDFModal}
-        onHide={() => setShowPDFModal(false)}
-        centered
-        className={styles.createModal}
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>Upload Your Resume (PDF)</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group>
-              <Form.File
-                label="Choose PDF"
-                accept=".pdf"
-                onChange={(e) => setSelectedPDF(e.target.files[0])}
-              />
-            </Form.Group>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowPDFModal(false)}>
-            Cancel
-          </Button>
-          <Button
-            variant="primary"
-            disabled={!selectedPDF || pdfUploading}
-            onClick={async () => {
-              setPdfUploading(true);
-
-              // Simulate delay for now
-              //await new Promise((res) => setTimeout(res, 2500));
-
-              setPdfUploading(false);
-              setShowPDFModal(false);
-              handleShow1(); // Proceed to form
-            }}
-          >
-            <img
-              src="/ai-sparkle-icon.svg" // update if your icon name is different
-              alt="AI"
-              style={{ width: "1.2rem", marginRight: "0.5rem", marginBottom: "3px" }}
-            />
-            Generate Portfolio
-          </Button>
-        </Modal.Footer>
-      </Modal>
+  
 
       
 

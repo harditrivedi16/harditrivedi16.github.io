@@ -339,23 +339,49 @@
 
 .betaTag {
   position: absolute;
-  top: 100%;      /* place below "Generate" */
+  top: 90%;      /* place below "Generate" */
   left: 0;        /* align with start of "Generate" */
-  margin-top: 2px;
+  margin-top: 1px;
   margin-bottom: 2px;
   background-color: teal;
   color: white;
-  font-size: 0.4rem;
-  font-weight: 600;
-  padding: 1px 6px;
-  border-radius: 6px;
-  text-transform: uppercase;
+  font-size: 0.48rem;
+  font-weight: 400;
+  padding: 0px 6px;
+  border-radius: 4px;
   white-space: nowrap;
 }
 
 .sparkle {
-  font-size: 1rem;
-  margin-left: 4px;
-  color: rgb(138, 38, 123);
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 1em;
 }
+
+.sparkle::before,
+.sparkle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 40%;
+  background: radial-gradient(circle at center, #ffffff 40%, #c8a2ff 100%);
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 2px;
+  box-shadow: 
+    -0.6em 0   0 -0.2em rgba(200,162,255,0.9),
+     0.6em 0   0 -0.2em rgba(200,162,255,0.9),
+     0   -0.6em 0 -0.2em rgba(200,162,255,0.9),
+     0    0.6em 0 -0.2em rgba(200,162,255,0.9);
+}
+
+.sparkle::after {
+  width: 25%;
+  height: 25%;
+  background: radial-gradient(circle at center, #ffffff 30%, #d6b3ff 100%);
+}
+
+
 
