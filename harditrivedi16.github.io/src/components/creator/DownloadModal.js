@@ -157,7 +157,7 @@ const DownloadModal = (props) => {
                 Note: The application does not and will not store any user
                 information in it's server. In case of any queries or
                 suggestions, feel free to reach out to me at
-                nachiket5197@gmail.com. Always happy to help :)
+                harditrivedi16@gmail.com. Always happy to help :)
               </div>
             </div>
           </div>

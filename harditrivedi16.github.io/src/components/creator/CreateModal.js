@@ -1950,7 +1950,7 @@ const CreateModal = (props) => {
                   placeholder={
                     localStorage.getItem("facebookId") == null ||
                     localStorage.getItem("facebookId") == ""
-                      ? "For eg: nachiketvtrivedi"
+                      ? "For eg: harditrivedi"
                       : localStorage.getItem("facebookId")
                   }
                   onChange={(e) => {
@@ -1969,7 +1969,7 @@ const CreateModal = (props) => {
                   placeholder={
                     localStorage.getItem("twitterId") == null ||
                     localStorage.getItem("twitterId") == ""
-                      ? "For eg: nachi_trivedi"
+                      ? "For eg: harditrivedi"
                       : localStorage.getItem("twitterId")
                   }
                   onChange={(e) => {
@@ -1986,7 +1986,7 @@ const CreateModal = (props) => {
                   placeholder={
                     localStorage.getItem("mediumId") == null ||
                     localStorage.getItem("mediumId") == ""
-                      ? "For eg: nachiket5197"
+                      ? "For eg: harditrivedi"
                       : localStorage.getItem("mediumId")
                   }
                   onChange={(e) => {

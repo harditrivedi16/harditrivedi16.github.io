@@ -50,7 +50,7 @@ let userData = {
     },
   ],
   instaLink: "https://linkedin.com/in/harditrivedi/",
-  instagramId: "nachiket_trivedi",
+  instagramId: "harditrivedi",
   instaQuerry: "/?__a=1",
 
   myDescription: [
